@@ -1,0 +1,45 @@
+.overlay {
+	width: 100%;
+	z-index: 100;
+    display: flex;
+    justify-content: center;
+	margin-bottom: 20px;
+}
+
+.text {
+	font-family: "Yanone Kaffeesatz";
+	font-size: 100px;
+	display: flex;
+	/* position: absolute; */
+	/* bottom: 20vh; */
+	/* left: 50%;
+	transform: translateX(-50%); */
+	user-select: none;
+
+
+}
+.text .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    
+}
+
+.text .wrapper .letter {
+    transition: ease-out 1s;
+    /* transform: translateY(40%); */
+}
+/* .text .wrapper .shadow {
+    transform: scale(1, -1);
+    color: #999;
+    transition: ease-in 5s, ease-out 5s;
+} */
+.text .wrapper:hover {
+    .letter {
+        transform: translateY(-200%);
+    }
+    .shadow {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
